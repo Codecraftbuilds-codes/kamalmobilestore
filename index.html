@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kamal Mobile Store</title>
+  <meta name="description" content="Kamal Mobile Store. Find a mobile. That fits you." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- 1. NAVBAR -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home">Kamal Mobile Store</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#guarantee">Guarantee</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- 2. HERO -->
+    <section class="hero" id="home">
+      <img class="hero-bg" src="1.jpg" alt="" />
+      <div class="hero-overlay"></div>
+      <div class="hero-copy">
+        <h1 class="hero-name">Kamal Mobile Store</h1>
+        <p class="hero-quote">Find a mobile. That fits you.</p>
+        <p class="hero-intro">Your friendly neighborhood mobile store for phones, covers, chargers and more. Simple choices, honest prices and a helpful team for the everyone.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#products">View products</a>
+          <a class="btn btn-alt" href="#contact">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ABOUT -->
+    <section class="section about reveal" id="about">
+      <p class="kicker">About us</p>
+      <h2>Kamal Mobile Store</h2>
+      <p>We are a family-friendly mobile store built on trust and simple service. Whether you need a new phone or a small accessory, we help you pick what fits your needs and your budget, with no pressure and no confusion.</p>
+    </section>
+
+    <!-- 4. PRODUCTS -->
+    <section class="section reveal" id="products">
+      <p class="kicker">Shop</p>
+      <h2>Our products</h2>
+
+      <!--
+        16 cards, 2 columns x 8 rows. They match products.js (same ids).
+        script.js can rebuild this grid from window.KAMAL_PRODUCTS.
+      -->
+      <div class="grid-2" id="product-grid">
+
+        <a class="card" href="product.html?id=phone-1">
+          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80" alt="Starlight 5G 128GB" loading="lazy" />
+          <div class="card-body">
+            <h3>Starlight 5G 128GB</h3>
+            <p class="price">₹14,999</p>
+          </div>
+        </a>
+
+        <a class="card" href="product.html?id=phone-2">
+          <img src="m12.jpg" alt="Horizon Lite 64GB" loading="lazy" />
+          <div class="card-body">
+            <h3>Sumsung Galaxy M12 5G 6GB RAM + 128GB STORAGE</h3>
+            <p class="price">₹,999</p>
+          </div>
+        </a>
+
+        <a class="card" href="product.html?id=phone-3">
+          <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=800&q=80" alt="Aura Pro 256GB" loading="lazy" />
+          <div class="card-body">
+            <h3>Aura Pro 256GB</h3>
+            <p class="price">₹24,999</p>
+          </div>
+        </a>
+
+        <a class="card" href="product.html?id=cover-1">
+          <img src="images/products/cover-1.jpg" alt="Clear Shield Back Cover" loading="lazy" />
+          <div class="card-body">
+            <h3>Clear Shield Back Cover</h3>
+            <p class="price">₹299</p>
+          </div>
+        </a>
+
+        <a class="card" href="product.html?id=cover-2">
+          <img src="images/products/cover-2.jpg" alt="Rugged Armor Case" loading="lazy" />
+          <div class="card-body">
+            <h3>Rugged Armor Case</h3>
+            <p class="price">₹499</p>
+          </div>
+        </a>
+
+        <a class="card" href="product.html?id=cover-3">
+          <img src="images/products/cover-3.jpg" alt="Soft Silicone Cover" loading="lazy" />
+          <div class="card-body">
+            <h3>Soft Silicone Cover</h3>
+            <p class="price">₹349</p>
+          </div>
+        </a>
+
+        <a class="card" href="product.html?id=glass-1">
+          <img src="images/products/glass-1.jpg" alt="Tempered Glass 9H" loading="lazy" />
+          <div class="card-body">
+            <h3>Tempered Glass 9H</h3>
+            <p class="price">₹199</p>
+          </div>
+        </a>
+
+        <a class="card" href="product.html?id=glass-2">
+          <img src="images/products/glass-2.jpg" alt="Privacy Tempered Glass" loading="lazy" />
+          <div class="card-body">
+            <h3>Privacy Tempered Glass</h3>
+            <p class="price">₹299</p>
+          </div>
+        </a>
+
+        <a class="card" href="product.html?id=charger-1">
+          <img src="images/products/charger-1.jpg" alt="20W Fast Wall Charger" loading="lazy" />
+          <div class="card-body">
+            <h3>20W Fast Wall Charger</h3>
+            <p class="price">₹599</p>
+          </div>
+        </a>
+
+        <a class="card" href="product.html?id=charger-2">
+          <img src="images/products/charger-2.jpg" alt="Braided USB-C Cable 1m" loading="lazy" />
+          <div class="card-body">
+            <h3>Braided USB-C Cable 1m</h3>
+            <p class="price">₹249</p>
+          </div>
+        </a>
+
+        <a class="card" href="product.html?id=powerbank-1">
+          <img src="images/products/powerbank-1.jpg" alt="Power Bank 10000mAh" loading="lazy" />
+          <div class="card-body">
+            <h3>Power Bank 10000mAh</h3>
+            <p class="price">₹1,199</p>
+          </div>
+        </a>
+
+        <a class="card" href="product.html?id=powerbank-2">
+          <img src="images/products/powerbank-2.jpg" alt="Power Bank 20000mAh Fast Charge" loading="lazy" />
+          <div class="card-body">
+            <h3>Power Bank 20000mAh Fast Charge</h3>
+            <p class="price">₹1,899</p>
+          </div>
+        </a>
+
+        <a class="card" href="product.html?id=earbuds-1">
+          <img src="images/products/earbuds-1.jpg" alt="Wireless Earbuds Air" loading="lazy" />
+          <div class="card-body">
+            <h3>Wireless Earbuds Air</h3>
+            <p class="price">₹1,499</p>
+          </div>
+        </a>
+
+        <a class="card" href="product.html?id=earbuds-2">
+          <img src="images/products/earbuds-2.jpg" alt="Wired Earphones with Mic" loading="lazy" />
+          <div class="card-body">
+            <h3>Wired Earphones with Mic</h3>
+            <p class="price">₹299</p>
+          </div>
+        </a>
+
+        <a class="card" href="product.html?id=access-1">
+          <img src="images/products/access-1.jpg" alt="Adjustable Phone Stand" loading="lazy" />
+          <div class="card-body">
+            <h3>Adjustable Phone Stand</h3>
+            <p class="price">₹349</p>
+          </div>
+        </a>
+
+        <a class="card" href="product.html?id=access-2">
+          <img src="images/products/access-2.jpg" alt="Ring Holder Grip" loading="lazy" />
+          <div class="card-body">
+            <h3>Ring Holder Grip</h3>
+            <p class="price">₹149</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- 5. GUARANTEE -->
+    <section class="section guarantee reveal" id="guarantee">
+      <div class="guarantee-grid">
+        <div>
+          <p class="kicker">Our promise</p>
+          <h2>Guarantee</h2>
+          <p>Every product at Kamal Mobile Store is checked before it reaches you. If something is not right, we are here to help with service support and replacement, so you can buy with confidence.</p>
+        </div>
+
+        <div class="photo-slot">
+          <!-- REPLACE THIS IMAGE -->
+          <img src="images/guarantee.jpg" alt="Guarantee" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. STORE / CONTACT -->
+    <section class="section contact reveal" id="contact">
+      <p class="kicker">Visit us</p>
+      <h2>Store &amp; contact</h2>
+      <p>Drop by the store to see every phone and accessory in person. Our friendly team will help you choose the right one.</p>
+
+      <div class="socials">
+        <a class="social" href="mailto:hello@example.com">Email</a>
+        <a class="social" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+        <a class="social" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+
+      <!-- REPLACE WITH YOUR REAL ADDRESS -->
+      <address class="address">
+        Kamal Mobile Store<br />
+        Shop No. 00, Main Road<br />
+        Your City, State - 000000
+      </address>
+    </section>
+
+  </main>
+
+  <!-- 7. FOOTER -->
+  <footer class="site-footer">
+    <p class="brand">Kamal Mobile Store</p>
+    <p>Find a mobile. That fits you.</p>
+    <p>&copy; 2026</p>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product | Kamal Mobile Store</title>
+  <meta name="description" content="Kamal Mobile Store. Find a mobile. That fits you." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR (same as index.html, links point back to the home page) -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html#home">Kamal Mobile Store</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="index.html#guarantee">Guarantee</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section reveal">
+      <a class="back-link" href="index.html#products">&larr; Back to products</a>
+
+      <!--
+        #product-root is filled by script.js from window.KAMAL_PRODUCTS.
+        Reads ?id=ITEM_ID from the URL. If id is missing or unknown, show the first product.
+        Expected markup inside #product-root:
+
+        <div class="product-layout">
+          <div class="photo-slot"> <img src="PRODUCT_IMG" alt="PRODUCT_NAME" /> </div>
+          <div class="card-body">
+            <h1>PRODUCT_NAME</h1>
+            <p class="price">PRODUCT_PRICE</p>
+            <p>PRODUCT_TEXT</p>
+            <a class="btn" href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20want%20to%20know%20more%20about%20PRODUCT_NAME%20from%20Kamal%20Mobile%20Store."
+               target="_blank" rel="noopener">Learn more</a>
+          </div>
+        </div>
+      -->
+      <div id="product-root">
+        <p>Loading product...</p>
+        <noscript>
+          <p>Please turn on JavaScript to see this product, or go back to the <a href="index.html#products">products page</a>.</p>
+        </noscript>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p class="brand">Kamal Mobile Store</p>
+    <p>Find a mobile. That fits you.</p>
+    <p>&copy; 2026</p>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
