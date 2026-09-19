@@ -8,7 +8,7 @@
 window.KAMAL_PRODUCTS = [
   {
     id: "phone-1",
-    name: "Sumsung Galaxy M12 5G 6GB RAM + 128GB STORAGE",
+    name: "Samsung Galaxy M12 5G 6GB RAM + 128GB STORAGE",
     price: "₹14,999",
     img: "m12.jpg",
     text: "6.6-inch bright display, 5G ready, 50MP camera and a 5000mAh battery that easily lasts a full day."
